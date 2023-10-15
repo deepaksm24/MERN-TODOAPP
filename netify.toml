@@ -1,0 +1,3 @@
+[build]
+  base = "main/"
+  publish = "client/"

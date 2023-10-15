@@ -19,8 +19,8 @@ app.use(cors({
 
 
 // test route
-app.get('/api/data', (req, res) => {
-  const data = { message: 'Hello from the Node.js API!' };
+app.get('/', (req, res) => {
+  const data = { message: 'Todo App connection Successfull' };
   res.json(data);
 });
 

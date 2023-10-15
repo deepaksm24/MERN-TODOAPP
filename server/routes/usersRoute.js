@@ -84,7 +84,7 @@ router.post("/login", async (req, res) => {
 // protected route
 router.get("/get-current-user", authMiddleware, async (req, res) => {
   
-  console.log(req.body.userID);
+  // console.log(req.body.userID);
 
   try {
     const user = await User.findById(req.body.userId).select("-password");

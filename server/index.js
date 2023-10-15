@@ -11,13 +11,12 @@ const usersRoute = require("./routes/usersRoute");
 
 // Use the cors middleware with appropriate options
 app.use(cors({
-  origin: 'http://localhost:3000', // Allow requests from this origin
+  origin: 'https://comfy-gnome-57fbec.netlify.app', // Allow requests from this origin
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allowed HTTP methods
   credentials: true, // Enable cookies and authentication headers if needed
 }));
 
-
-
+// http://localhost:3000
 // test route
 app.get('/', (req, res) => {
   const data = { message: 'Todo App connection Successfull' };
